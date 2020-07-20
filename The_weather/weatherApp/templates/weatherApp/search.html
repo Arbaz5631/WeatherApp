@@ -1,0 +1,35 @@
+{% extends 'weatherApp/basic.html' %}
+
+{% block title%} Search Result {% endblock %}
+{% block body %}
+
+<div class='container my-4'>
+
+
+
+    <div class="card mb-3 bg-color-dark" style='width:500px ;'>
+        <div>
+        <img src="http://openweathermap.org/img/w/{{city_weather.icon}}.png" style='height:300px ; width: 500px; background-color:skyblue;'
+            class="card-img" alt="Image">
+        </div>
+        <div class="card-body" style="background-color: tan;">
+            <h5 class="card-title"><b>Temp. </b>{{city_weather.temperature}}</h5>
+            <p class="card-text"><b>{{city_weather.city}}</b></p>
+            <p class="card-text"><b>{{city_weather.description}}</b></p>
+            <p class="card-text"><b>Max temp. </b>{{city_weather.temperature_max}}</p>
+            <p class="card-text"><b>Min temp. </b>{{city_weather.temperature_min}}</p>
+            <p class="card-text"><b>Wind speed </b>{{city_weather.wind_speed}} Km/hrs</p>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+</div>
+
+
+{% endblock %}

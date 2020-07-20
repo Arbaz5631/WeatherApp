@@ -1,0 +1,73 @@
+{% extends 'weatherApp/basic.html' %}
+
+{% block title%} AkCloud{% endblock %}
+{% block body %}
+    <div class='container-fluid my-2 mx-1 row'>
+        <div class="card  col-md-6 " style="width: 18rem; background-color: cornsilk;">
+            <div class="card-body col-md-6">
+                <img src="http://openweathermap.org/img/w/{{city_weather.Farrukhabad.icon}}.png" alt="Image">
+                <h5 class="card-title">{{city_weather.Farrukhabad.city}}</h5>
+                <p class="card-text">{{city_weather.Farrukhabad.temperature}} C</p>
+                <p class="card-text">{{city_weather.Farrukhabad.description}}</p>
+
+            </div>
+
+        </div>
+        <div class="card  col-md-6" style="width: 18rem; background-color: cornsilk;">
+            <div class="card-body col-md-6">
+                <img src="http://openweathermap.org/img/w/{{city_weather.Kanpur.icon}}.png" alt="Image">
+                <h5 class="card-title">{{city_weather.Kanpur.city}}</h5>
+                <p class="card-text">{{city_weather.Kanpur.temperature}} C</p>
+                <p class="card-text">{{city_weather.Kanpur.description}}</p>
+
+            </div>
+    </div>
+    <div class='container-fluid my-2  mx-1 row '>
+        </div>
+        <div class="card  col-md-6 " style="width: 18rem; background-color: cornsilk;">
+            <div class="card-body">
+                <img src="http://openweathermap.org/img/w/{{city_weather.Jaipur.icon}}.png" alt="Image">
+                <h5 class="card-title">{{city_weather.Jaipur.city}}</h5>
+                <p class="card-text">{{city_weather.Jaipur.temperature}} C</p>
+                <p class="card-text">{{city_weather.Jaipur.description}}</p>
+
+            </div>
+
+        </div>
+        <div class="card col-md-6" style="width: 18rem; background-color: cornsilk;">
+            <div class="card-body ">
+                <img src="http://openweathermap.org/img/w/{{city_weather.Noida.icon}}.png" alt="Image">
+                <h5 class="card-title">{{city_weather.Noida.city}}</h5>
+                <p class="card-text">{{city_weather.Noida.temperature}} C</p>
+                <p class="card-text">{{city_weather.Noida.description}}</p>
+
+            </div>
+        
+        </div>
+    </div>
+    <div class='container-fluid my-2 mx-1 row'>    
+        <div class="card col-md-6 " style="width: 18rem; background-color: cornsilk;">
+            <div class="card-body">
+                <img src="http://openweathermap.org/img/w/{{city_weather.Delhi.icon}}.png" alt="Image">
+                <h5 class="card-title">{{city_weather.Delhi.city}}</h5>
+                <p class="card-text">{{city_weather.Delhi.temperature}} C</p>
+                <p class="card-text">{{city_weather.Delhi.description}}</p>
+
+            </div>
+
+        </div>
+        <div class="card col-md-6" style="width: 18rem; background-color: cornsilk;">
+            <div class="card-body ">
+                <img src="http://openweathermap.org/img/w/{{city_weather.Ghaziabad.icon}}.png" alt="Image">
+                <h5 class="card-title">{{city_weather.Ghaziabad.city}}</h5>
+                <p class="card-text">{{city_weather.Ghaziabad.temperature}} C</p>
+                <p class="card-text">{{city_weather.Ghaziabad.description}}</p>
+
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+    {% endblock %}
+    
